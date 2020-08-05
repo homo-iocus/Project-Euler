@@ -8,8 +8,6 @@ def getPrimes(n:int):
     for i in range(2, n):
         gestrichen.append(False)
 
-
-    print(len(gestrichen))
     for i in range(2, int(math.sqrt(n))):
        if not gestrichen[i]:
 
@@ -25,3 +23,14 @@ def getPrimes(n:int):
 
             primes.append(i)
     return primes
+
+def isPrime(n:int):
+    primes:list[int] = getPrimes(1000)
+    for prime in primes:
+        if prime > math.sqrt(n):
+            break
+        else:
+            if n % prime == 0:
+                return False
+
+    return True

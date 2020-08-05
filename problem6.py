@@ -1,4 +1,5 @@
-#Problem 6:  https://projecteuler.net/problem=5
+#Problem 6:  https://projecteuler.net/problem=6
+
 sum1: int = 0
 sum2:int  = 0
 for i in range(1, 101):
