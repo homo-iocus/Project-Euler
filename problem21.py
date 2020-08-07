@@ -1,3 +1,7 @@
+#Problem 21: https://projecteuler.net/problem=21
+
+#function d() as described in the problem
+#returns the sum of all divisors of an Number n 
 def d(n:int):
     l:list = []
     sum = 0
@@ -10,6 +14,7 @@ def d(n:int):
         sum = sum + el
     return sum
 
+#generates all amicable Nums under the input n
 def amicableNums(n: int):
     l:list = []
     for a in range(n):
@@ -21,9 +26,10 @@ def amicableNums(n: int):
     l.sort()
     return l
 
-
-
+#generate all amicable Numbers under 10000
 ambicableNums = amicableNums(10000)
+
+#add all ambicable Numbers together and print the sum
 sum = 0
 for el in ambicableNums:
     sum = sum + el
