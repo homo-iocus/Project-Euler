@@ -1,4 +1,5 @@
 #Problem 25: https://projecteuler.net/problem=25
+#fibannoci generator, return the n-th number of the fibannoci sequenz 
 def fib(n: int) -> int:
     if n == 0:
         return n
