@@ -39,7 +39,6 @@ if __name__ == '__main__':
     #(or if they are in the set of all sums of abundant Numbers which was generated before)
     #if not adding them up for the solution
     for i in range(28123):
-        print("Checking {}".format(i))
         if i in sumOfAbundantSet:
             continue
         else:
