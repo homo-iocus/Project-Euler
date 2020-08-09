@@ -21,3 +21,12 @@ def fib(n: int) -> int:
     for _ in range(1, n):
         last, next = next, last+next
     return next
+    
+def findAllDivisors(n):
+    li = []
+    f =1
+    while f < n:
+        if n%f == 0:
+            li.append(f)
+        f = f +1
+    return li
