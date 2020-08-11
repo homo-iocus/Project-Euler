@@ -1,4 +1,4 @@
-def isPanadigital(n:str):
+def isPandigital(n:str):
     if len(n) > 9:
         return False
     for i in range(1, 10):
@@ -13,7 +13,7 @@ if __name__ == '__main__':
         for j in range(10000):
             product = j * i
             string = str(product) + str(i) + str(j)
-            if isPanadigital(string):
+            if isPandigital(string):
                 if product not in products:
                     products.append(product)
 
