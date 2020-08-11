@@ -1,3 +1,6 @@
+#Problem 30: https://projecteuler.net/problem=30
+
+#Check if an given number in form of an string is pandigital
 def isPandigital(n:str):
     if len(n) > 9:
         return False
