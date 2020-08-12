@@ -25,7 +25,9 @@ def getPrimes(n:int):
     return primes
 
 def isPrime(n:int):
-    primes:list[int] = getPrimes(1000)
+    if n <= 1:
+        return False
+    primes:list[int] = getPrimes(10000)
     for prime in primes:
         if prime > math.sqrt(n):
             break
@@ -34,7 +36,7 @@ def isPrime(n:int):
                 return False
 
     return True
-#Primfaktorzerlegung 
+#Primfaktorzerlegung
 def trial_division(n: int) -> list:
     # Return a list of the prime factors for a natural number.
     a = []               # Prepare an empty list.
