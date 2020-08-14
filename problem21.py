@@ -1,7 +1,7 @@
 #Problem 21: https://projecteuler.net/problem=21
 
 #function d() as described in the problem
-#returns the sum of all divisors of an Number n 
+#returns the sum of all divisors of an Number n
 def d(n:int):
     l:list = []
     sum = 0
