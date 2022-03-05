@@ -1,3 +1,5 @@
+#Problem 46: https://projecteuler.net/problem=46
+
 from Prime import getPrimes
 import math
 
